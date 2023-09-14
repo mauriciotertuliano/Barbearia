@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+*{
+    margin: 05px;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #000;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    flex-wrap: wrap;
+}
+nav .logo{
+    color: white;
+    font-size: 35px;
+    font-weight: 600;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+nav ul li{
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+nav ul li a.active,
+nav ul li a:hover{
+    background: #f88f06;
+}
+
+nav .menu-btn i{
+    color: #fff;
+    cursor: pointer;
+    display: none;
+}
+@media (max-width: 768px) {
+    .menu-btn i {
+        display: block;
+    }
+    .nav-list {
+        position: fixed;
+        top: 80px;
+        left: -100%;
+        background-color: #b0d6ac;
+        height: 100vh;
+        width: 100%;
+        text-align: center;
+        display: block;
+        transition: all 0.3s ease;
+    }
+    .nav-list.open {
+        left: 0;
+    }
+    .nav-list li {
+        width: 100%;
+        margin: 50px 0;
+    }
+    .nav-list a {
+        font-size: 23px;
+    }
+    .nav-list a.active,
+    .nav-list a:hover {
+        background: none;
+        color: #f88f06;
+    } 
+}
+.fotos {
+    margin: auto;
+    height:300px;
+    width: 80%;
+    padding-left: 300px;
+    background-color: #1a1919;
+    
+}
+
+.sobre{
+    padding: 05%;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+.pimg{
+    width: 70%;
+    height: left;
+    padding-left: 10px;
+    position:static;
+}
+
+.paragrafo1{
+    width: 480px;
+    height: 90px;
+    text-align: center;
+    font-weight:bold;
+    font-size: 15px;
+    padding: 10px;
+
+}
+.fotop{
+    width: 25%;
+    height: 15px;
+    margin:auto;
+    display:flex;
+    justify-content:right;
+    align-items:flex-end;
+    padding-top: 05%;
+}   
+
+.foto1{
+    width: 250px;
+    height: 150px;
+    border:0cm;
+    border-radius: 50%;
+}
+    
+
+.ulimg{
+    width: 100%;
+    background-color: #f5f0e5;
+    list-style: none;
+    display: flex;
+    justify-content:space-evenly;
+    padding: 02px
+     
+}
+.agenda{
+    background-image: url('ag.jpg');
+    width:100%;
+    height:50%;
+    margin: auto;
+    display: flex;
+    color: #fff;
+}
+.btn1{
+    background: linear-gradient(-45deg,#ffce51,#ff7253,#fd5754);
+    color: white;
+    margin: auto;
+    display: flex;
+    border-radius: 2px solid;
+}
+hr{
+    color: blue;
+    height: 2px;
+}
+.clidepo{
+    padding-left: 90px;
+    align-items: center;
+    
+     
+}
+
+
+#carousel {
+    width: 300px;
+    overflow: hidden;
+    margin: auto;
+    display: flex;
+    border-radius: 100px;
+}
+#image-container {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+.carousel-image {
+    width: 300px;
+    height: 200px;
+}
+.depo2{
+    border-radius: 50%;
+    display: flex;
+    justify-content:space-evenly;
+}
+.roda{
+    width: 100%;
+    color:#0e0202; 
+    padding: 20px;
+    margin: top 50px;
+    background-color:#1a1919;
+}
+.contact{
+    font-size: 25px;
+    inline-size: auto;
+}
+.contato{
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display:inline-block;
+    padding: 20px;
+    border-block-end-width: 10px,5px,10px;
+}
+.contatox{
+    margin: 10px;
+    padding: left 10px; 
+    color: #000;
+}
+.enviar{
+    background: linear-gradient(-45deg,#ffce51,#05a305,#d3c6c6);
+    color: #000;
+    
+}
+.soc {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px; /* Espaçamento superior */
+}
+
+.social {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    font-size: 24px;
+    margin-top: 10px; /* Espaçamento superior */
+    color: #0077B5;
+    text-decoration: none;
+}
+
+.social svg {
+    margin: 0 10px; /* Espaçamento entre os ícones */
+}
+
+
+.roda{
+    width: 100%;
+    background-color: #333; /* Cor de fundo do rodapé */
+    color: #fff; /* Cor do texto no rodapé */
+    padding: 20px; /* Espaçamento interno do rodapé */
+    text-align: center; 
+}
+.mapa{
+    width: 100%;
+    height: 10%;
+    padding: 15px;
+    margin:left;
+    display: flex;
+}
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+section {
+    width: 100%;
+
+}
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 90px;
+    height: 50px;
+    background-color: #000;
+    text-decoration: none;
+}
+.btn::after {
+    content: "↑";
+    font-size: 32px;
+    font-weight: bold;
+    color: rgb(248, 10, 10);
+    transition: margin-top 250ms;
+}
+.btn:hover::after {
+    margin-top:-8px;
+    color: #f88f06;
+}
